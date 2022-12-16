@@ -1,0 +1,47 @@
+body{
+    text-align: center;
+    
+}
+h1{
+    font-size: 50px;
+    font-style: italic;
+    color: rgb(249, 151, 168);
+}
+.main-container{
+    background-color: rgb(249, 228, 231);
+
+    
+}
+.input{
+    width:57vw;
+    height:30px;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(255, 195, 205);
+    border: none;
+}
+.container{
+    display:flex;
+    justify-content:center
+}
+.showbutton{
+  margin: 15px;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  background-color: rgb(255, 195, 205);
+  padding: 20px;
+}
+.line{
+    text-decoration: line-through;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+}
+.btn{
+    padding:10px ;
+    
+}
