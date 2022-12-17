@@ -67,6 +67,7 @@ inputElement.addEventListener('keydown',function(event){
         li.append(checkbox)
         li.append(para)
         li.append(deleteicon)
+        
 
         let newTodo = {
             value:inputElement.value,
@@ -227,5 +228,28 @@ clearbtn.addEventListener('click',()=>{
     })
     count()
 })
+
+
+
+let ullist = document.querySelector('.todoitems')
+ullist.addEventListener('dblclick',(event)=>{
+    if(event.target.matches('p')){
+        let value = event.target.innerText
+        event.target.innerText = ""
+        let inputtext = document.createElement('input')
+        inputtext.type = "text"
+        inputtext.value =  value
+        event.target.append(inputtext)
+        
+    }
+})
+
+ullist.addEventListener('keydown',(e)=>{
+    
+    if(e.target.matches('input')&& e.key=="Enter"){
+        e.target.parentElement.innerText = e.target.value
+    }
+})
+
 
 console.log(todoList);
