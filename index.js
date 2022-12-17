@@ -40,7 +40,7 @@ function createAndAppendTodo(given,flag){
 }
 
 inputElement.addEventListener('keydown',function(event){
-    if(event.key == "Enter" && inputElement.value !== " "){
+    if(event.key == "Enter" && inputElement.value){
         let li = document.createElement('li')
         li.style.display = "flex"
         li.style.backgroundColor='pink'
@@ -52,7 +52,7 @@ inputElement.addEventListener('keydown',function(event){
 
         let checkbox = document.createElement('input')
         checkbox.type = 'checkbox'
-        
+        checkbox.style.cursor = "pointer"
 
         let para = document.createElement('p')
         para.classList.add('paragraph')
@@ -61,6 +61,7 @@ inputElement.addEventListener('keydown',function(event){
         let deleteicon = document.createElement('i')
         deleteicon.classList.add("far", "fa-trash-alt")
         deleteicon.style.marginTop = '18px'
+        deleteicon.style.cursor = "pointer"
 
         task.append(li)
         li.append(checkbox)

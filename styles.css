@@ -32,6 +32,7 @@ h1{
   font-size: 20px;
   background-color: rgb(255, 195, 205);
   padding: 20px;
+  cursor: pointer;
 }
 .line{
     text-decoration: line-through;
@@ -43,5 +44,5 @@ h1{
 }
 .btn{
     padding:10px ;
-    
+    cursor: pointer;
 }
